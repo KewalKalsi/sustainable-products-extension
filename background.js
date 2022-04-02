@@ -10,6 +10,13 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
                     
                 });
             }
+            
+        if (tab.url.indexOf('maps') != -1) {
+            console.log('Extension Enabled');
+            chrome.action.enable(tabId);
+
+            }
+            
         } else {
             console.log('Extension Disabled');
             chrome.action.disable(tabId);

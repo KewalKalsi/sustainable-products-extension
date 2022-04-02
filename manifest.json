@@ -8,12 +8,16 @@
         "scripting"
     ],
     "host_permissions": [
-        "https://www.amazon.com/*"
+        "https://www.amazon.com/*",
+        "https://www.google.com/*"
+        
     ],
     "background": {
         "service_worker":"background.js"
     },
     "action": {
-        "default_title": "SAPS"
+        "default_title": "SAPS",
+        "default_icon": "SAPS_logo.png",
+        "default_popup": "popup.html"
     }
 }
