@@ -4,9 +4,16 @@
     "description": "This app will automatically determine and suggest to you sustainable alternatives to products you may be interested in. These products will not only better the environment, but will also help reduce your negative environmental footprints by picking companies/products that may protect the environment more",
     "version": "1.0",
     "permissions": [
-        "tabs"
+        "tabs",
+        "scripting"
     ],
     "host_permissions": [
         "https://www.amazon.com/*"
-    ]
+    ],
+    "background": {
+        "service_worker":"background.js"
+    },
+    "action": {
+        "default_title": "SAPS"
+    }
 }
