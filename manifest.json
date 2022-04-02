@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Sustainable Alternative Product Selector",
+    "description": "This app will automaticallydetermine and suggest to you sustainable alternatives to products you may be interested in. These products will not only better the environment, but will also help reduce your negative environmental footprints by picking companies/products that may protect the environment more",
+    "version": 1.0,
+    "icons": {
+        "16": "",
+        "48": "",
+        "128": ""
+    },
+    "page_action": {
+        "default_icon": {
+            "16": "",
+            "48": "",
+            "128": ""
+        }
+    },
+    "content_scripts": [{}]
+}
