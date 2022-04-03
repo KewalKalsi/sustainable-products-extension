@@ -15,7 +15,7 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
                     console.log(data)
                     console.log(data.request_info.credits_remaining)
                     console.log(data.product.brand);
-                    if (true == true) {
+                    /*if (true == true) {
                         var username = '01c3a0fa839a03e7082f7fd75562a339';
                         var password = '616e68cca5bd5e8fbff19f99e12bc8bb'
                         $.ajax({
@@ -23,12 +23,13 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
                             url: "myapi.php",
                             dataType: 'json',
                             headers: {
-                              "Authorization": "Basic " + btoa(username + ":" + password)
+                                "Authorization": "Basic " + btoa(username + ":" + password)
                             },
                             success: function (result){
                                 console.log(result)
                             }
-                          });
+                        });
+                        
 
                         /*fetch('https://www.amee.com/api/companies?from_lat_lon=51.623,-0.0732&distance=20', {
                             headers: {
@@ -39,8 +40,8 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
                         .then(data => {
                             jsonData = data;
                             console.log(data);
-                        })*/
-                    }
+                        })
+                    }*/
                 })
                 .catch(error => console.error(error));
             }
