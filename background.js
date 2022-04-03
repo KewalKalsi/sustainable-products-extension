@@ -44,6 +44,13 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
                 })
                 .catch(error => console.error(error));
             }
+            
+        if (tab.url.indexOf('google') != -1) {
+            console.log('Extension Enabled');
+            chrome.action.enable(tabId);
+
+            }
+            
         } else {
             console.log('Extension Disabled');
             chrome.action.disable(tabId);
