@@ -15,13 +15,6 @@
     "background": {
         "service_worker":"background.js"
     },
-    "content_scripts": [
-        {
-            "matches": ["https://www.amazon.com/*"],
-            "js": ["jquery.js",
-            "background.js"]
-        }
-    ],
     "action": {
         "default_title": "SAPS",
         "default_icon": "SAPS_logo.png",
