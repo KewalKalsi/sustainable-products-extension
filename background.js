@@ -11,7 +11,7 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
                 });
             }
             
-        if (tab.url.indexOf('maps') != -1) {
+        if (tab.url.indexOf('google') != -1) {
             console.log('Extension Enabled');
             chrome.action.enable(tabId);
 
